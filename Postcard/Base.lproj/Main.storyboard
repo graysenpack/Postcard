@@ -38,15 +38,6 @@
                                     <rect key="frame" x="16" y="259" width="288" height="115"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-pb-Yt9">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="64" width="288" height="61"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uS-Jj-1YE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.50583254891981155" blue="0.21471177315264622" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,6 +51,33 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jrX-Jw-Gga"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-pb-Yt9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="64" width="288" height="61"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ho0-9a-mQY">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="79" y="154" width="137" height="21"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-fk-w7h">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="57" y="133" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -67,8 +85,10 @@
                                 <exclude reference="bOI-Sm-VJS"/>
                                 <exclude reference="lDa-oF-Pdi"/>
                                 <exclude reference="E7g-mi-szi"/>
-                                <exclude reference="c6H-pb-Yt9"/>
                                 <exclude reference="7uS-Jj-1YE"/>
+                                <exclude reference="c6H-pb-Yt9"/>
+                                <exclude reference="Ho0-9a-mQY"/>
+                                <exclude reference="gw7-fk-w7h"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -76,8 +96,10 @@
                                 <include reference="bOI-Sm-VJS"/>
                                 <include reference="lDa-oF-Pdi"/>
                                 <include reference="E7g-mi-szi"/>
-                                <include reference="c6H-pb-Yt9"/>
                                 <include reference="7uS-Jj-1YE"/>
+                                <include reference="c6H-pb-Yt9"/>
+                                <include reference="Ho0-9a-mQY"/>
+                                <include reference="gw7-fk-w7h"/>
                             </mask>
                         </variation>
                     </view>
@@ -86,7 +108,9 @@
                     <connections>
                         <outlet property="enterMessageTextField" destination="E7g-mi-szi" id="WMJ-1c-7eW"/>
                         <outlet property="enterNameTextField" destination="lDa-oF-Pdi" id="SGo-yh-Wdw"/>
+                        <outlet property="loveLabel" destination="gw7-fk-w7h" id="ND7-aq-b1B"/>
                         <outlet property="messageLabel" destination="c6H-pb-Yt9" id="I2k-oE-fq3"/>
+                        <outlet property="nameLabel" destination="Ho0-9a-mQY" id="upy-3N-oJ9"/>
                         <outlet property="sendMailButton" destination="7uS-Jj-1YE" id="ch8-NV-3o6"/>
                     </connections>
                 </viewController>
